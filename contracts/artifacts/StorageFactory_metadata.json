@@ -7,7 +7,20 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getNum",
+				"name": "createSimpleStorageContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_storageIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "sfGetNum",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -22,13 +35,37 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_favoriteNumber",
+						"name": "_storageIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_simpleStorageNumber",
 						"type": "uint256"
 					}
 				],
-				"name": "store",
+				"name": "sfStorage",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "simpleStorageArray",
+				"outputs": [
+					{
+						"internalType": "contract SimpleStorage",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -45,7 +82,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SimpleStorage.sol": "SimpleStorage"
+			"contracts/StorageFactory.sol": "StorageFactory"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -65,6 +102,14 @@
 			"urls": [
 				"bzz-raw://896b04074868bcfdb6a0728d44781e4193cfdce271b4e0c1c6d3981011dfc192",
 				"dweb:/ipfs/QmXYvQhxLc96DcGKSi1fHF5qek7MeEcxqgoav4WLeJiRdF"
+			]
+		},
+		"contracts/StorageFactory.sol": {
+			"keccak256": "0xf63aa8fa06884497be9ca122493115d73f0cfb008aa0bb60ef30c59bce591377",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3b1b1c6908cbd7c229c0b3e715f854a56c2043073dd723130fbc2df1fadb7069",
+				"dweb:/ipfs/QmaVmHQhxUDjNyqwt1xYhF6HV3iN3Rf8ZqZmdGvWbrLCWs"
 			]
 		}
 	},

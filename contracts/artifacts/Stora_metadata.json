@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/StorageFactory.sol": "Name"
+			"contracts/StorageFactory.sol": "Stora"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"contracts/StorageFactory.sol": {
-			"keccak256": "0x03f92750f9bb19ff9a60f686265851ace4e71a1b4c84096e9efc83172d536603",
+			"keccak256": "0x589707c20db9640a15f6f1b84206ac35ce92431c246e66c8b9194ae9a68f9171",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bb7e349516e1bedbbf80be229b382053ff1a93132a8db694af13094bfdb50f22",
-				"dweb:/ipfs/QmaNMKTwgm78hbYtVhRE9iQa3iXUMd9XTUBZhuhFJGcJvs"
+				"bzz-raw://683d507d1238e8fba2b7e796319b9796f1176ee7920da34e37ce41064e1551e6",
+				"dweb:/ipfs/QmXSriCkkKbthvNznE4fhBz9i9EeE3wLYTadg2UfpN5k8s"
 			]
 		}
 	},
