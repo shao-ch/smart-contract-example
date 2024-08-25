@@ -5,7 +5,7 @@ pragma solidity ^0.8.13;
 //withdraw dunds
 //set minimum funding value in usd;
 
-import "./NumberUtils.sol";
+import "./lib/NumberUtils.sol";
 
 contract FundPay {
 
