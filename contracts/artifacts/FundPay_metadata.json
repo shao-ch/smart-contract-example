@@ -6,10 +6,61 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "addressToAmountFunded",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "fund",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "funders",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minimumUsd",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -47,12 +98,28 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/FundPay.sol": {
-			"keccak256": "0xdc268b96b2db06e30b954f32ababb98cf4c5f905c0325ec1b55f5740c60304cf",
+		"@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x257a8d28fa83d3d942547c8e129ef465e4b5f3f31171e7be4739a4c98da6b4f0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fa540b61dc00e32925b6fad5d6c1bb5e776b6ae75ac03b7baf3732202f25c92e",
-				"dweb:/ipfs/QmSv6UDwg2WRF1cMTmDU2EdCJ2Nmqxct8j7bpKQyP8A5F6"
+				"bzz-raw://6d39e11b1dc7b9b8ccdabbc9be442ab7cda4a81c748f57e316dcb1bcb4a28bf9",
+				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
+			]
+		},
+		"contracts/FundPay.sol": {
+			"keccak256": "0x41579f2d82a131226c973032d8434ff562bd323667b8fb60c92371b2134d6e75",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://da4843ad845a53405264b85f07bd6ab913cbef51574f9a257a49cbeccec4d3fe",
+				"dweb:/ipfs/QmQaRc4xzehQVdSZA4w1ewz2RvsUfxGq1jnPxohvXWEHvs"
+			]
+		},
+		"contracts/NumberUtils.sol": {
+			"keccak256": "0x6b2e1329d2dce662905a56607fb12105ba246be7181653278f8a2a35612f6273",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4c3bb1f1c8da7c7f86025e732357805a17fb42909ee87ec20b4d746c6f71a605",
+				"dweb:/ipfs/QmQ9D2KkM2yh5UE1j3Wst6HngbeJENdGx2antAGAkX1fNo"
 			]
 		}
 	},
